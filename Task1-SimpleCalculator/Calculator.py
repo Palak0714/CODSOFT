@@ -1,7 +1,9 @@
 # Simple Calculator in Python
 
+
 # Function to perform calculation
 def calculator(num1, num2, operation):
+    
     if operation == '+':
         return num1 + num2
     elif operation == '-':
@@ -25,11 +27,14 @@ try:
     number2 = float(input("Enter the second number: "))
     op = input("Enter an operation (+, -, *, /): ")
 
+   
     # Performing calculation
     result = calculator(number1, number2, op)
 
+   
     # Displaying result
     print("Result:", result)
+
 
 except ValueError:
     print("Invalid input. Please enter numeric values.")
